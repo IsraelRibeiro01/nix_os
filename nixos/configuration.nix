@@ -9,6 +9,7 @@
     ./modules/ambxst.nix
     ./modules/lazyvim.nix
     ./modules/hyprland.nix
+    ../fonts.nix
   ];
   ## -------------------------
   ## Bootloader
