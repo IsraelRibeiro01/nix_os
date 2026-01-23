@@ -101,8 +101,12 @@ in
     enable = true;
     # use the spicePkgs (legacyPackages from the spicetify flake)
     theme = spicePkgs.themes.comfy;
-    colorScheme = "Nord";
+    colorScheme = "Vaporwave";
     enabledExtensions = with spicePkgs.extensions; [
+      coverAmbience
+      history
+      betterGenres
+      simpleBeautifulLyrics 
       hidePodcasts
       shuffle
     ];
