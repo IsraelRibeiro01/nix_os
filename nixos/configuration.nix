@@ -8,6 +8,7 @@
     inputs.home-manager.nixosModules.home-manager
     ./modules/ambxst.nix
     ./modules/lazyvim.nix
+    ./modules/hyprland.nix
   ];
   ## -------------------------
   ## Bootloader
@@ -83,9 +84,47 @@
   
   services.displayManager.gdm.enable = true;
   services.desktopManager.gnome.enable = true;
+  ## ---------------------------------------
+  ## Other Desktops
+  ## ---------------------------------------
+  
   programs.hyprland.enable = true;
+  
+  # create a Wayland session file for GDM
+  environment.etc."share/wayland-sessions/hyprland.desktop".text = ''
+  [Desktop Entry]
+  Name=Hyprland
+  Comment=Hyprland Wayland session
+  Exec=Hyprland
+  Type=Application
+  X-GNOME-Autostart-enabled=false
+  NoDisplay=false
+'';
+
+  # enable niri if available
   programs.niri.enable = true;
+
+  environment.etc."share/wayland-sessions/niri.desktop".text = ''
+  [Desktop Entry]
+  Name=Niri
+  Comment=Niri Wayland session
+  Exec=niri
+  Type=Application
+  X-GNOME-Autostart-enabled=false
+  NoDisplay=false
+'';
   services.xserver.windowManager.qtile.enable = true;
+  # create an X11 session entry so GDM shows Qtile
+  environment.etc."share/xsessions/qtile.desktop".text = ''
+  [Desktop Entry]
+  Name=Qtile
+  Comment=Qtile window manager (X11)
+  Exec=qtile start
+  TryExec=qtile
+  Type=Application
+  X-GNOME-Autostart-enabled=false
+  NoDisplay=false
+'';
 
   ## -------------------------
   ## Audio

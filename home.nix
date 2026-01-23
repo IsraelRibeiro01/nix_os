@@ -2,7 +2,7 @@
 
 let
   gext = pkgs.gnomeExtensions;
-  dotfiles = "${config.home.homeDirectory}/dotfiles";
+  dotfiles = "/etc/nixos/dotfiles";
   mkLink = path: config.lib.file.mkOutOfStoreSymlink path;
 in
 {
