@@ -73,17 +73,17 @@ in
       };
       # Set shell theme
       "org/gnome/shell/extensions/user-theme" = {
-        name = "marble-shell-theme";
+        name = "Marble-blue-light";
       };
       # Set interface themes (icon theme, GTK theme, cursor theme)
       "org/gnome/desktop/interface" = {
-        gtk-theme = "Adwaita-dark";
+        gtk-theme = "Marble-blue-light";
         icon-theme = "Colloid";
         color-scheme = "prefer-dark";
       };
        # Set legacy app theme
       "org/gnome/desktop/wm/preferences" = {
-        theme = "Adwaita-dark";
+        theme = "Adw-gtk-3-dark";
       };
     };
   };
