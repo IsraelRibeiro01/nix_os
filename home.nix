@@ -43,6 +43,9 @@ in
     	nerd-fonts.fira-code
     	nerd-fonts.droid-sans-mono
     	rubik
+    	colloid-icon-theme
+    	marble-shell-theme
+    	
   ])
   ++
   (with pkgs.gnomeExtensions; [
@@ -67,6 +70,20 @@ in
         "mediacontrols@cliffniff.github.com"
         "steal-my-focus-window@steal-my-focus-window"
         ];
+      };
+      # Set shell theme
+      "org/gnome/shell/extensions/user-theme" = {
+        name = "marble-shell-theme";
+      };
+      # Set interface themes (icon theme, GTK theme, cursor theme)
+      "org/gnome/desktop/interface" = {
+        gtk-theme = "Adwaita-dark";
+        icon-theme = "Colloid";
+        color-scheme = "prefer-dark";
+      };
+       # Set legacy app theme
+      "org/gnome/desktop/wm/preferences" = {
+        theme = "Adwaita-dark";
       };
     };
   };
