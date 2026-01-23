@@ -51,6 +51,7 @@
   networking.networkmanager.enable = true;
   services.geoclue2.enable = true;
   services.openssh.enable = true;
+  hardware.bluetooth.enable = true;
   # Set your time zone.
   time.timeZone = "America/Sao_Paulo";
   
@@ -209,6 +210,7 @@
     obs-studio
     gnome-tweaks
     bibata-cursors
+    blueman
   ];
 
   ## -------------------------
