@@ -1,0 +1,97 @@
+//   _____ _____ _____ _____ _____ _____ _____ _____ _____ 
+//  |   __|  _  |   __|_   _|   __|   __|_   _|     |  |  |
+//  |   __|     |__   | | | |   __|   __| | | |   --|     |
+//  |__|  |__|__|_____| |_| |__|  |_____| |_| |_____|__|__|  ARCH  
+//
+//  by Bina
+
+
+// execute with: fastfetch --colors-block-range-start 9 --colors-block-width 3
+
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+    	"source": "file:///home/luwiblu/.config/fastfetch/image/cirno.png",
+    	"type": "kitty",
+    	"height": 15,
+    	"padding": {
+    		"top": 2
+        }
+    },
+    "display": {
+        "separator": " "
+    },
+    
+    "modules": [
+        "break",
+        "break",
+	{
+            "type": "custom",
+            "format": "\u001b[37m  𝕷 𝖚 𝖜 𝖎 𝖇 𝖑 𝖚 \u001b[0m\n"
+        },
+        "break",
+        {
+            "type": "os",
+            "key": " ",
+            "keyColor": "34",
+        },
+        {
+            "type": "kernel",
+            "key": " ",
+            "keyColor": "35",
+        },
+        {
+            "type": "cpu",
+            "key": "󰍛 ",
+            "showPeCoreCount": true,
+            "keyColor": "32", 
+        },
+        {
+            "type": "gpu",
+	    "key": "󰢮 ",
+	    "hideType": "integrated",
+            "format": "{1} {2}",
+            "keyColor": "32",
+        },
+        {
+            "type": "de",
+            "key": "󰇄 ",
+            "keyColor": "34",
+        },
+        {
+            "type": "shell",
+            "key": " ",
+            "keyColor": "36", 
+        },
+        {
+            "type": "terminal",
+            "key": " ",
+            "keyColor": "36", 
+        },
+        {
+            "type": "wm",
+            "key": " ",
+            "keyColor": "35", 
+        },
+        {
+            "type": "uptime",
+            "key": " ",
+            "keyColor": "33", 
+        },
+        {
+            "type": "media",
+            "key": "󰝚 ",
+            "keyColor": "34", 
+        },
+        "break",
+        "break",
+        {
+            "key": " ",
+            "keyColor": "35", 
+            "type": "colors",
+            "symbol": "circle"
+       },
+        "break",
+        "break",
+    ]
+}
