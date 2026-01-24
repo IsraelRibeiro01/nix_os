@@ -125,8 +125,7 @@ in
   programs.spicetify = {
     enable = true;
     # use the spicePkgs (legacyPackages from the spicetify flake)
-    theme = spicePkgs.themes.comfy;
-    colorScheme = "Vaporwave";
+    theme = spicePkgs.themes.lucid;
     enabledExtensions = with spicePkgs.extensions; [
       coverAmbience
       history
