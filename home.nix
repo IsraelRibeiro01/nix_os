@@ -45,6 +45,7 @@ in
     	rubik
     	colloid-icon-theme
     	marble-shell-theme
+        cava
     	
   ])
   ++
