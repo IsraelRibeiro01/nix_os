@@ -41,7 +41,12 @@
 
     optimise.automatic = true;
   };
-
+  system.autoUpgrade = {
+   enable = true;
+   flake = inputs.self.outPath;
+   dates = "daily";
+   allowReboot = false;
+ };
   nixpkgs.config.allowUnfree = true;
 
   ## -------------------------
