@@ -48,7 +48,30 @@
    allowReboot = false;
  };
   nixpkgs.config.allowUnfree = true;
+  
+  # systemd services for automatic updates with flakes enabled
+  systemd.services.nixos-flake-update = {
+    description = "Update NixOS flake inputs";
+    serviceConfig = {
+      Type = "oneshot";
+      User = "root";
+      WorkingDirectory = "/etc/nixos";
+      ExecStart = "${pkgs.nixVersions.stable}/bin/nix flake update";
+    };
+    after = [ "network-online.target" ];
+    wants = [ "network-online.target" ];
+  };
+  systemd.timers.nixos-flake-update = {
+    description = "Daily NixOS flake update timer";
+    wantedBy = [ "timers.target" ];
 
+    timerConfig = {
+      OnCalendar = "daily";
+      OnBootSec = "15min";
+      Persistent = true;
+      RandomizedDelaySec = "1h";
+    };
+  };
   ## -------------------------
   ## Networking
   ## -------------------------
