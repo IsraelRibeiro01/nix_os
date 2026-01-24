@@ -109,7 +109,7 @@ in
   enableZshIntegration = true;
   settings = {
    theme = "Black Metal";
-   background-opacity = "0.85";
+   background-opacity = "0.70";
    background-blur = true;
    window-theme = "ghostty";
   };
