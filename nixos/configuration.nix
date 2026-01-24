@@ -232,7 +232,6 @@
     python3
     wget
     unzip
-    ghostty
     vesktop
     pywal
     obs-studio

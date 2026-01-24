@@ -1,7 +1,6 @@
 { config, pkgs, lib, spicePkgs, ... }:
 
 let
-  gext = pkgs.gnomeExtensions;
   dotfiles = "/etc/nixos/dotfiles";
   mkLink = path: config.lib.file.mkOutOfStoreSymlink path;
 in
@@ -57,7 +56,7 @@ in
     steal-my-focus-window
     user-themes
   ]);
-
+  
   dconf = {
     enable = true;
     settings = {
@@ -105,7 +104,17 @@ in
     "niri/config.toml".source          = mkLink "${dotfiles}/niri/config.toml";
     "spicetify/config.ini".source      = mkLink "${dotfiles}/spicetify/config.ini";
   };
-  
+  programs.ghostty = {
+  enable = true;
+  enableZshIntegration = true;
+  settings = {
+   theme = "Black Metal";
+   background-opacity = "0.85";
+   background-blur = true;
+   window-theme = "ghostty";
+  };
+ };
+   
   programs.git = {
   enable = true;
   settings.user = {
