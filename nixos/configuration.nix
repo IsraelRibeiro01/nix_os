@@ -239,6 +239,9 @@
     gnome-tweaks
     bibata-cursors
     blueman
+    tty-clock
+    gtop
+    cbonsai
   ];
 
   ## -------------------------
