@@ -1,4 +1,4 @@
-{ config, pkgs, lib, spicePkgs, ... }:
+{ config, pkgs, lib, spicePkgs, unstable, ... }:
 
 let
   dotfiles = "/etc/nixos/dotfiles";
@@ -37,7 +37,6 @@ in
     	fastfetch
     	neovim
     	nodejs_22
-    	hyprland
         firefox
     	nerd-fonts.fira-code
     	nerd-fonts.droid-sans-mono
@@ -45,6 +44,7 @@ in
     	colloid-icon-theme
     	marble-shell-theme
         cava
+        hyprland
     	
   ])
   ++
@@ -114,8 +114,8 @@ in
    window-theme = "ghostty";
   };
  };
-   
-  programs.git = {
+  
+ programs.git = {
   enable = true;
   settings.user = {
     name = "luwiblu";
