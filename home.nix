@@ -37,6 +37,8 @@ in
     	fastfetch
     	neovim
         gitfetch
+        onefetch
+        gh
         fortune-kind
         neo-cowsay
     	nodejs_22
