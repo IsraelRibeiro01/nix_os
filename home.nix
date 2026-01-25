@@ -89,7 +89,7 @@ in
   };
 
   xdg.configFile = {
-    "fastfetch/config.d/nix.jsonc".source = mkLink "${dotfiles}/fastfetch/nix.jsonc";
+    "fastfetch/nix.jsonc".source = mkLink "${dotfiles}/fastfetch/nix.jsonc";
     "hypr/hyprland.conf".source        = mkLink "${dotfiles}/hypr/hyprland.conf";
     "Ambxst/wallpapers.json".source    = mkLink "${dotfiles}/Ambxst/wallpapers.json";
     "nvim/init.lua".source             = mkLink "${dotfiles}/nvim/init.lua";
@@ -129,6 +129,7 @@ in
 
   home.file.".config/fastfetch/image/cirno.png".source = mkLink "${dotfiles}/fastfetch/image/cirno.png";
   home.file.".local/share/wallpapers/1299370.jpg".source = mkLink "${dotfiles}/wallpapers/1299370.jpg";
+  home.file.".local/fastfetch/image/cirno2.png".source = mkLink "${dotfiles}/fastfetch/image/cirno2.png";
 
   # Configure Spicetify using the spicePkgs package set computed in flake.nix
   programs.spicetify = {
