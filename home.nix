@@ -98,7 +98,6 @@ in
     "nvim/lua/plugins/nvim-tree.lua".source = mkLink "${dotfiles}/nvim/lua/plugins/nvim-tree.lua";
     "nvim/lua/plugins/telescope.lua".source = mkLink "${dotfiles}/nvim/lua/plugins/telescope.lua";
     "nvim/lua/plugins/alpha.lua".source = mkLink "${dotfiles}/nvim/lua/plugins/alpha.lua";
-    "nvim/lua/plugins/treesitter.lua".source = mkLink "${dotfiles}/nvim/lua/plugins/treesitter.lua";
     "nvim/lua/plugins/lsp_and_cmp.lua".source = mkLink "${dotfiles}/nvim/lua/plugins/lsp_and_cmp.lua";
     "qtile/config.py".source           = mkLink "${dotfiles}/qtile/config.py";
     "niri/config.toml".source          = mkLink "${dotfiles}/niri/config.toml";
@@ -129,7 +128,7 @@ in
 
   home.file.".config/fastfetch/image/cirno.png".source = mkLink "${dotfiles}/fastfetch/image/cirno.png";
   home.file.".local/share/wallpapers/1299370.jpg".source = mkLink "${dotfiles}/wallpapers/1299370.jpg";
-  home.file.".local/fastfetch/image/cirno2.png".source = mkLink "${dotfiles}/fastfetch/image/cirno2.png";
+  home.file.".config/fastfetch/image/cirno2.png".source = mkLink "${dotfiles}/fastfetch/image/cirno2.png";
 
   # Configure Spicetify using the spicePkgs package set computed in flake.nix
   programs.spicetify = {
