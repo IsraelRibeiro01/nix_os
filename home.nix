@@ -129,6 +129,7 @@ in
   home.file.".config/fastfetch/image/cirno.png".source = mkLink "${dotfiles}/fastfetch/image/cirno.png";
   home.file.".local/share/wallpapers/1299370.jpg".source = mkLink "${dotfiles}/wallpapers/1299370.jpg";
   home.file.".config/fastfetch/image/cirno2.png".source = mkLink "${dotfiles}/fastfetch/image/cirno2.png";
+  home.file.".local/share/fastfetch/presets/nix.jsonc".source = mkLink "${dotfiles}/fastfetch/nix.jsonc";
 
   # Configure Spicetify using the spicePkgs package set computed in flake.nix
   programs.spicetify = {

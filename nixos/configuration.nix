@@ -10,6 +10,7 @@
     ./modules/lazyvim.nix
     ./modules/hyprland.nix
     ../fonts.nix
+    ../gaming.nix
   ];
   ## -------------------------
   ## Bootloader
