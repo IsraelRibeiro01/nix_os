@@ -36,6 +36,9 @@ in
     	eza
     	fastfetch
     	neovim
+        gitfetch
+        fortune-kind
+        neo-cowsay
     	nodejs_22
         firefox
     	nerd-fonts.fira-code
