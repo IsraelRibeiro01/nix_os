@@ -14,7 +14,7 @@ in
   programs.zsh = {
     enable = true;
     initContent = ''
-      cat ~/.cache/wal/sequences
+      cat .cache/wal/sequences
       wal -R
       clear
       fastfetch --config nix
@@ -35,6 +35,7 @@ in
 	bat
     	eza
     	fastfetch
+        discordo
     	neovim
         gitfetch
         onefetch

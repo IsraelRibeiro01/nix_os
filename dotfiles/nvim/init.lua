@@ -11,6 +11,8 @@ if not vim.loop.fs_stat(lazypath) then
   })
 end
 vim.opt.rtp:prepend(lazypath)
+vim.opt.number = true
+vim.opt.relativenumber = false
 vim.opt.termguicolors = true
 vim.opt.background =  "dark"
 vim.g.nvim_tree_respect_buf_cwd = 1
