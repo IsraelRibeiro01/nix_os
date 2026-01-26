@@ -245,6 +245,7 @@
     unzip
     vesktop
     pywal
+    pywalfox-native
     obs-studio
     gnome-tweaks
     bibata-cursors

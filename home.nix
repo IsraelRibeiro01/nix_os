@@ -98,7 +98,6 @@ in
     "hypr/hyprland.conf".source        = mkLink "${dotfiles}/hypr/hyprland.conf";
     "Ambxst/wallpapers.json".source    = mkLink "${dotfiles}/Ambxst/wallpapers.json";
     "nvim/init.lua".source             = mkLink "${dotfiles}/nvim/init.lua";
-    "nvim/lua/plugins/catppuccin.lua".source = mkLink "${dotfiles}/nvim/lua/plugins/catppuccin.lua";
     "nvim/lua/plugins/lualine.lua".source = mkLink "${dotfiles}/nvim/lua/plugins/lualine.lua";
     "nvim/lua/plugins/nvim-tree.lua".source = mkLink "${dotfiles}/nvim/lua/plugins/nvim-tree.lua";
     "nvim/lua/plugins/telescope.lua".source = mkLink "${dotfiles}/nvim/lua/plugins/telescope.lua";

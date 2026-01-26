@@ -6,13 +6,13 @@ return {
     local dashboard = require("alpha.themes.dashboard")
 
     dashboard.section.header.val = {
-      "███╗   ██╗██╗   ██╗██╗███╗   ███╗",
-      "████╗  ██║██║   ██║██║████╗ ████║",
-      "██╔██╗ ██║██║   ██║██║██╔████╔██║",
-      "██║╚██╗██║╚██╗ ██╔╝██║██║╚██╔╝██║",
-      "██║ ╚████║ ╚████╔╝ ██║██║ ╚═╝ ██║",
-      "╚═╝  ╚═══╝  ╚═══╝  ╚═╝╚═╝     ╚═╝",
-    }
+     "███╗   ██╗███╗   ███╗██╗██╗  ██╗██╗  ██╗",
+     "████╗  ██║████╗ ████║██║╚██╗██╔╝╚██╗██╔╝",
+     "██╔██╗ ██║██╔████╔██║██║ ╚███╔╝  ╚███╔╝", 
+     "██║╚██╗██║██║╚██╔╝██║██║ ██╔██╗  ██╔██╗", 
+     "██║ ╚████║██║ ╚═╝ ██║██║██╔╝ ██╗██╔╝ ██╗",
+     "╚═╝  ╚═══╝╚═╝     ╚═╝╚═╝╚═╝  ╚═╝╚═╝  ╚═╝",
+   }
 
     dashboard.section.buttons.val = {
       dashboard.button("n", "  New file", ":ene <BAR> startinsert <CR>"),
@@ -22,7 +22,7 @@ return {
       dashboard.button("q", "󰅚  Quit", ":qa<CR>"),
     }
 
-    dashboard.section.footer.val = "welcome back, editor."
+    dashboard.section.footer.val = "Would you dive with me"
 
     alpha.setup(dashboard.config)
   end,
