@@ -1,9 +1,12 @@
 { config, pkgs, ambxst,unstable, ... }:
 
+let
+ system = pkgs.stdenv.hostPlatform.system;
+in
 {
   environment.systemPackages = with pkgs; [
     # using the ambxst package from flake input
-    ambxst.packages.${pkgs.system}.default
+    ambxst.packages.${system}.default
   ];
 
   # if Ambxst needs service-like files or to be started automatically,
