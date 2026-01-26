@@ -74,7 +74,7 @@
           };
         }
 
-        # Your custom modules
+        # My  custom modules
         ./nixos/modules/ambxst.nix
         ./nixos/modules/hyprland.nix
         ./nixos/modules/lazyvim.nix
