@@ -14,11 +14,10 @@ in
   programs.zsh = {
     enable = true;
     initContent = ''
-      cat .cache/wal/sequences
       wal -R
-      clear
-      fastfetch --config nix
-    '';
+      clear 
+      fastfetch
+       '';
     shellAliases = { 
         ls = "eza -a --icons=always";
         update = "sudo nixos-rebuild switch --flake .#KyujinNixOS";
@@ -96,7 +95,7 @@ in
   };
 
   xdg.configFile = {
-    "fastfetch/nix.jsonc".source = mkLink "${dotfiles}/fastfetch/nix.jsonc";
+    "fastfetch/config.jsonc".source = mkLink "${dotfiles}/fastfetch/config.jsonc";
     "hypr/hyprland.conf".source        = mkLink "${dotfiles}/hypr/hyprland.conf";
     "Ambxst/wallpapers.json".source    = mkLink "${dotfiles}/Ambxst/wallpapers.json";
     "nvim/init.lua".source             = mkLink "${dotfiles}/nvim/init.lua";
