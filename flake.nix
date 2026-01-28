@@ -19,12 +19,16 @@
     };
 
     ambxst = {
-      url = "github:Axenide/Ambxst";
+      url = "github:Axenide/Ambxst/dev";
       inputs.nixpkgs.follows = "nixpkgs-unstable";  # Use unstable for ambxst
+    };
+    zen-browser = {
+       url = "github:youwen5/zen-browser-flake";
+       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, home-manager, spicetify-nix, ambxst, ... }:
+  outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, home-manager, spicetify-nix, ambxst, zen-browser, ... }:
   let
     system = "x86_64-linux";
 
@@ -41,7 +45,7 @@
       inherit system;
 
       specialArgs = {
-        inherit inputs ambxst spicePkgs;
+        inherit inputs ambxst spicePkgs zen-browser;
         inherit unstable;  # Pass unstable package set to modules
       };
 
@@ -78,6 +82,7 @@
         ./nixos/modules/ambxst.nix
         ./nixos/modules/hyprland.nix
         ./nixos/modules/lazyvim.nix
+        ./nixos/modules/zen.nix
       ];
     };
   };

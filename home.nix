@@ -51,6 +51,7 @@ in
     	marble-shell-theme
         cava
         hyprland
+        yt-dlp
     	
   ])
   ++
