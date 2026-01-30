@@ -51,7 +51,7 @@ in
         cava
         hyprland
         yt-dlp
-    	
+    	darktable
   ])
   ++
   (with pkgs.gnomeExtensions; [
