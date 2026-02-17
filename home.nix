@@ -52,6 +52,11 @@ in
         hyprland
         yt-dlp
     	darktable
+	swaglyrics
+	osdlyrics
+	sptlrx
+	ncspot
+	pipes
   ])
   ++
   (with pkgs.gnomeExtensions; [
