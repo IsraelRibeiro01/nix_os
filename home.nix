@@ -57,6 +57,11 @@ in
 	sptlrx
 	ncspot
 	pipes
+	unzip
+	zip
+	gemini-cli
+	dbeaver-bin
+	postgresql
   ])
   ++
   (with pkgs.gnomeExtensions; [
