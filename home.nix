@@ -89,11 +89,11 @@ in
       };
       # Set shell theme
       "org/gnome/shell/extensions/user-theme" = {
-        name = "Marble-blue-light";
+        name = "Marble-blue-dark";
       };
       # Set interface themes (icon theme, GTK theme, cursor theme)
       "org/gnome/desktop/interface" = {
-        gtk-theme = "Marble-blue-light";
+        gtk-theme = "Marble-blue-dark";
         icon-theme = "Colloid";
         color-scheme = "prefer-dark";
       };
