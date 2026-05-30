@@ -235,7 +235,7 @@
   ## System packages
   ## -------------------------
   environment.systemPackages = with pkgs; [
-    fastfetch
+   fastfetch
     hyprland
     nemo
     neovim

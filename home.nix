@@ -79,7 +79,7 @@ in
       "org/gnome/shell" = {
         disable-user-extensions = false;
         enabled-extensions = [
-        "dash2dock-lite@icedman.github.com"
+        "dash-to-dock@micxgx.gmail.com"
         "blur-my-shell@aunetx"
         "user-theme@gnome-shell-extensions.gcampax.github.com"
         "phases-of-moon@melomane13"
